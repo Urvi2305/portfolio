@@ -279,7 +279,7 @@ export default function Portfolio() {
       animation: grain 0.5s steps(1) infinite;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 100%) {
       .hero-headline { font-size: clamp(36px, 9vw, 60px) !important; }
       .hide-mobile { display: none !important; }
       .skills-grid { grid-template-columns: 1fr 1fr !important; }
@@ -435,7 +435,7 @@ export default function Portfolio() {
 
           <Reveal direction="right" delay={100}>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: T.textSecondary, marginBottom: 24 }}>
-              I build backend systems that handle real scale — not toy projects, but production infrastructure serving hundreds of thousands of users. My work centers on making complex distributed workflows reliable, observable, and fast.
+              I build backend systems that handle real scale not toy projects, but production infrastructure serving hundreds of thousands of users. My work centers on making complex distributed workflows reliable, observable, and fast.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: T.textSecondary, marginBottom: 32 }}>
               Currently leading a team of 10 engineers at Bacancy Technology, owning architecture end-to-end for a UK precious metals trading platform. I care deeply about zero-downtime migrations, event-driven fault tolerance, and pushing query performance to its limits.
@@ -523,7 +523,7 @@ export default function Portfolio() {
               period: "Mar 2025 – Present",
               location: "Ahmedabad",
               highlights: [
-                "Owned full backend architecture for a UK-based precious metals trading platform serving 100,000+ production users — stack selection, API design, and end-to-end delivery.",
+                "Owned full backend architecture for a UK-based precious metals trading platform serving 100,000+ production users stack selection, API design, and end-to-end delivery.",
                 "Achieved 20–40% query latency reduction via indexing, query optimization, and schema restructuring.",
                 "Built centralized WebSocket price-streaming service used by 6 internal projects with Redis caching for sub-second responses.",
                 "Introduced Kafka-based event streaming for trade workflows enabling reliable async processing.",
@@ -612,7 +612,7 @@ export default function Portfolio() {
               stack: ["Node.js", "TypeScript", "PostgreSQL", "Redis", "Kafka", "WebSocket", "Prisma", "Docker", "AWS SNS/S3", "Royal Mail API"],
             },
             {
-              name: "Airyis — AI-Powered Digital Marketing Platform",
+              name: "Airyis AI-Powered Digital Marketing Platform",
               sub: "Multi-channel content publishing · AI automation",
               period: "2024",
               description: "Built backend integrating OpenAI for content generation and multi-channel publishing. Implemented Stripe payments with idempotency and webhook reconciliation. Connected Meta Graph API and Twitter/X API with reliability safeguards.",
@@ -661,7 +661,7 @@ export default function Portfolio() {
         </Reveal>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 20 }}>
           {[
-            { title: "AI Integration Hackathon", org: "Bacancy Technology", when: "March 2023", note: "1st place — led team, owned architecture, shipped production-ready AI integration under tight deadline." },
+            { title: "AI Integration Hackathon", org: "Bacancy Technology", when: "March 2023", note: "1st place led team, owned architecture, shipped production-ready AI integration under tight deadline." },
             { title: "Employee of the Quarter", org: "Citrusbug Technolabs", when: "April 2024", note: "Recognized for technical ownership during concurrent AI integration and platform scaling delivery." },
             { title: "Employee of the Quarter", org: "Bacancy Technology", when: "July 2025", note: "Awarded for on-time delivery, architecture ownership, and raising engineering standards through mentoring." },
             { title: "Spot Award", org: "Bacancy Technology", when: "Nov 2025", note: "Fast, effective problem-solving during complex distributed systems delivery keeping team unblocked." },
@@ -687,7 +687,7 @@ export default function Portfolio() {
             Let's Build Something
           </h2>
           <p style={{ fontSize: 15, lineHeight: 1.8, color: T.textSecondary, marginBottom: 24 }}>
-            Open to senior engineering roles and technical leadership positions. Based in Ahmedabad — actively targeting opportunities in the <span style={{ color: T.text }}>US and Europe</span>, available fully remote or willing to relocate.
+            Open to senior engineering roles and technical leadership positions. Based in Ahmedabad actively targeting opportunities in the <span style={{ color: T.text }}>US and Europe</span>, available fully remote or willing to relocate.
           </p>
           <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 48 }}>
             {[
