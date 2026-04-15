@@ -501,7 +501,7 @@ export default function Portfolio() {
       )}
 
       {/* HERO */}
-      <section id="hero" className="hero-section" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "120px 32px 60px", maxWidth: SP.maxW, margin: "0 auto", position: "relative" }}>
+      <section id="hero" className="hero-section" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "12px 32px 60px", maxWidth: SP.maxW, margin: "0 auto", position: "relative" }}>
         <div style={{ position: "absolute", top: "15%", right: "5%", width: 320, height: 320, borderRadius: "50%", background: `radial-gradient(circle, ${T.accentBg} 0%, transparent 70%)`, filter: "blur(60px)", pointerEvents: "none" }} />
         <Reveal delay={0}>
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 32 }}>
