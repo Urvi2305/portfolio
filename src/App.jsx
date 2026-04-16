@@ -53,6 +53,7 @@ function Section({ id, children, narrow = false, className = "", extraStyle = {}
       className={`section-pad${className ? ` ${className}` : ""}`}
       style={{
         padding: `${SP.sectionV} ${SP.sectionH}`,
+        // padding: `${SP.sectionV * 0.7} ${SP.sectionH}`,
         maxWidth: narrow ? SP.maxWNarrow : SP.maxW,
         margin: "0 auto",
         ...extraStyle,
@@ -210,6 +211,9 @@ export default function Portfolio() {
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap');
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
+      section {
+    scroll-margin-top: 80px;
+  }
     body { font-family: 'DM Sans', sans-serif; background: ${T.bg}; color: ${T.text}; transition: background 0.3s, color 0.3s; }
     h2 { color: ${T.text}; }
     ::selection { background: ${T.accent}; color: #000; }
@@ -501,7 +505,7 @@ export default function Portfolio() {
       )}
 
       {/* HERO */}
-      <section id="hero" className="hero-section" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "12px 32px 60px", maxWidth: SP.maxW, margin: "0 auto", position: "relative" }}>
+      <section id="hero" className="hero-section" style={{ minHeight: "calc(100vh-60px)", display: "flex", flexDirection: "column", justifyContent: "center", padding: "40px 32px 40px", maxWidth: SP.maxW, margin: "60px auto 0", position: "relative" }}>
         <div style={{ position: "absolute", top: "15%", right: "5%", width: 320, height: 320, borderRadius: "50%", background: `radial-gradient(circle, ${T.accentBg} 0%, transparent 70%)`, filter: "blur(60px)", pointerEvents: "none" }} />
         <Reveal delay={0}>
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 32 }}>
