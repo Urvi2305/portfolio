@@ -340,6 +340,10 @@ export default function Portfolio() {
       .availability-chip { width: 100%; justify-content: center; }
       nav { padding: 0 ${SP.sectionHMobile} !important; }
       footer { padding: 20px !important; flex-direction: column; gap: 8px; text-align: center; }
+        .hero-section {
+    padding-top: 80px !important; /* 👈 pushes content below navbar */
+  }
+
     }
     @media (max-width: 480px) {
       .stats-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
