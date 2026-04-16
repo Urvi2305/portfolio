@@ -509,7 +509,7 @@ export default function Portfolio() {
       )}
 
       {/* HERO */}
-      <section id="hero" className="hero-section" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "12px 32px 60px", maxWidth: SP.maxW, margin: "0 auto", position: "relative" }}>
+      <section id="hero" className="hero-section" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "12px 32px 60px",     maxWidth: SP.maxW, margin: "0 auto", position: "relative" }}>
         <div style={{ position: "absolute", top: "15%", right: "5%", width: 320, height: 320, borderRadius: "50%", background: `radial-gradient(circle, ${T.accentBg} 0%, transparent 70%)`, filter: "blur(60px)", pointerEvents: "none" }} />
         <Reveal delay={0}>
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 32 }}>
@@ -525,10 +525,10 @@ export default function Portfolio() {
           </h1>
         </Reveal>
         <Reveal delay={160}>
-          <p style={{ maxWidth: 560, fontSize: 16, lineHeight: 1.75, color: T.textSecondary, marginTop: 20, marginBottom: 28 }}>
-            Backend engineer specializing in scaling and stabilizing production systems under real-world load. Built a centralized pricing infrastructure that resolved a live failure across 6 systems and now serves{" "}
-            <span style={{ color: T.text }}>100K+ users</span>.
-          </p>
+        <p style={{ maxWidth: 560, fontSize: 16, lineHeight: 1.75, color: T.textSecondary, marginTop: 20, marginBottom: 28 }}>
+          Backend engineer focused on designing and stabilizing distributed systems under real-world production load.
+          Re-architected a fragmented pricing system (6 services → 1 pipeline), reducing upstream API load by ~80% and eliminating live transaction failures across a 100K+ user platform.
+        </p>
         </Reveal>
         <Reveal delay={240}>
           <div className="hero-tags" style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 14 }}>
@@ -565,6 +565,8 @@ export default function Portfolio() {
           </div>
         </Reveal>
       </section>
+      
+      <Divider />
 
       {/* ABOUT */}
       <Section id="about">
@@ -585,7 +587,7 @@ export default function Portfolio() {
           </Reveal>
           <Reveal direction="right" delay={100}>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: T.textSecondary, marginBottom: 24 }}>
-              I prefer working on systems where there's time to understand the problem deeply before building. Good engineering starts with clarity understanding the domain, the data, and how everything connects before writing a line of code.
+              I work best on systems where there's time to understand the problem deeply before building. Good engineering starts with clarity understanding the domain, the data, and how everything connects before writing a line of code.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.85, color: T.textSecondary, marginBottom: 32 }}>
               I've worked on systems where poor architecture created real production risks especially in pricing and payments where mistakes directly impact the business. Instead of temporary fixes, I find the root cause and design for long-term stability.
@@ -600,7 +602,50 @@ export default function Portfolio() {
       </Section>
 
       <Divider />
+      
+      <Section id="deep-dive">
+        <Reveal>
+          <SectionHeading label="Deep Dive" title="Real-Time Pricing System" />
+        </Reveal>
 
+        <Reveal delay={80}>
+          <div style={{ maxWidth: 800 }}>
+            
+            <p style={{ fontSize: 15.5, lineHeight: 1.85, color: T.textSecondary, marginBottom: 18 }}>
+              The platform had a critical production issue where 6 independent services were polling a third-party pricing API every 3 seconds, leading to rate limits, inconsistent data, and transaction failures during peak trading.
+            </p>
+
+            <p style={{ fontSize: 15.5, lineHeight: 1.85, color: T.textSecondary, marginBottom: 18 }}>
+              I redesigned the system into a centralized event-driven pipeline:
+            </p>
+
+            <ul style={{ paddingLeft: 18, marginBottom: 18, color: T.textSecondary }}>
+              <li>Single upstream price fetcher → Redis cache layer</li>
+              <li>WebSocket service broadcasting real-time updates</li>
+              <li>Kafka pipeline for fallback + async recovery</li>
+              <li>REST fallback for degraded clients</li>
+            </ul>
+
+            <p style={{ fontSize: 15.5, lineHeight: 1.85, color: T.textSecondary, marginBottom: 18 }}>
+              Key engineering decisions:
+            </p>
+
+            <ul style={{ paddingLeft: 18, marginBottom: 18, color: T.textSecondary }}>
+              <li>Used WebSockets over polling to eliminate redundant network load</li>
+              <li>Introduced Redis as a single source of truth for real-time pricing</li>
+              <li>Kafka ensured fault tolerance when upstream APIs failed</li>
+              <li>Designed idempotent consumers to prevent duplicate trade processing</li>
+            </ul>
+
+            <p style={{ fontSize: 15.5, lineHeight: 1.85, color: T.text }}>
+              Result: Reduced external API calls by ~80%, eliminated rate-limit failures, and stabilized pricing consistency across all dependent systems under concurrent load.
+            </p>
+
+          </div>
+        </Reveal>
+      </Section>        
+      
+      <Divider />
       {/* SKILLS */}
       <Section id="skills">
         <Reveal>
