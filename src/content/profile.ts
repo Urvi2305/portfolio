@@ -8,7 +8,7 @@ export const profile = {
   email: "urvisolanki2318@gmail.com",
   phone: "+91 9327187418",
   linkedin: "https://linkedin.com/in/urvisolanki",
-  resumeHref: "/resume/Urvi_solanki.pdf",
+  resumeHref: "/resume/urvi_solanki.pdf",
   coreStack: ["Python", "Node.js", "TypeScript", "PostgreSQL", "Redis", "Kafka", "AWS"],
   status: [
     { label: "OPEN_TO_REMOTE", tone: "signal" as const },
