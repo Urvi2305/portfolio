@@ -27,7 +27,7 @@ export default async function Image() {
           <div style={{ width: 14, height: 14, borderRadius: 999, background: "#35d0a0" }} />
         </div>
         <div style={{ display: "flex", color: "#d4a24c", fontSize: 28 }}>
-          Senior Backend Engineer (AI)
+          Senior Backend Engineer
         </div>
         <div style={{ display: "flex", color: "#edeff2", fontSize: 64, fontWeight: 700, marginTop: 12 }}>
           Urvi Solanki

@@ -10,12 +10,12 @@ export const experience: Job[] = [
     location: "Ahmedabad",
     domain: "Payments · Inventory Management · Precious Metals Trading (UK client)",
     bullets: [
-      "Built payment orchestration services integrating 5+ payment providers using PostgreSQL, Redis, and Kafka reliable transaction processing across multiple channels for a UK precious metals trading platform.",
-      "Redesigned real-time pricing distribution using WebSockets and Redis, replacing polling reduced redundant API traffic and improved consistency across concurrent sessions.",
-      "Executed a zero-downtime migration of 10,000+ user records, transactions, and inventory data with full production availability.",
-      "Improved database performance through indexing, query optimisation, and schema changes cut query latency up to 40%.",
-      "Designed a centralised event-driven notification platform for inventory, orders, payments, and onboarding real-time delivery via WebSockets, read/unread state, delivery tracking.",
-      "Designed payment orchestration as an admin-configurable system gateway switching with zero engineering intervention, ~70% faster feature change lead time.",
+      "Built payment orchestration services integrating 5+ payment providers using FastAPI, PostgreSQL, Redis, and Kafka, enabling reliable transaction processing across multiple payment channels for a UK-based precious metals trading platform.",
+      "Designed payment orchestration as an admin-configurable system, the client switches between multiple payment gateways with zero engineering intervention, cutting feature-change lead time by ~70%.",
+      "Redesigned a real-time pricing distribution system with WebSockets and Redis, eliminating polling and delivering consistent, real-time price updates across concurrent user sessions.",
+      "Executed a zero-downtime migration of 10,000+ user, transaction, and inventory records, maintaining full production availability throughout.",
+      "Designed a centralised, event-driven notification platform for inventory, orders, payments, and customer onboarding, with real-time WebSocket delivery, read/unread state management, and delivery-status tracking.",
+      "Improved database performance through indexing, query optimisation, and schema changes, reducing query latency by up to 40%.",
     ],
   },
   {
@@ -27,7 +27,7 @@ export const experience: Job[] = [
     location: "Ahmedabad",
     domain: "SaaS · AI · Analytics · Marketing Automation (global clients)",
     bullets: [
-      "Built 3–5 full backend services using Django and FastAPI across SaaS, AI, and analytics platforms for global clients, alongside Node.js-based systems.",
+      "Built 3-5 full backend services using Django and FastAPI across SaaS, AI, and analytics platforms for global clients, alongside Node.js-based systems.",
       "Developed real-time voice processing and AI-automation workflows using Python with Deepgram and OpenAI transcription, summarisation, automation pipelines.",
       "Reduced PostgreSQL query latency by 80%+ through execution-plan analysis, indexing, and query rewriting one of the highest-impact performance gains on the team.",
       "Implemented Redis caching, cutting API response times by 50% for frequently accessed workloads across multiple client platforms.",

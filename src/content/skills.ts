@@ -15,7 +15,7 @@ export const skills: SkillGroup[] = [
   },
   {
     category: "Infrastructure & DevOps",
-    items: ["Apache Kafka", "AWS (S3, SNS, Lambda)", "Docker", "GitHub Actions", "WebSocket", "REST API design"],
+    items: ["Apache Kafka", "AWS (S3, SNS, SES, SQS, Lambda)", "Docker", "GitHub Actions", "WebSocket", "REST API design"],
   },
   {
     category: "System design",
@@ -29,7 +29,11 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    category: "AI & testing",
-    items: ["OpenAI", "Deepgram", "Cursor", "Claude", "Jest 85%+ coverage"],
+    category: "AI & search integrations",
+    items: ["OpenAI", "Deepgram", "Pinecone (vector search)", "Embeddings"],
+  },
+  {
+    category: "Testing",
+    items: ["Jest, 85%+ automated coverage"],
   },
 ];

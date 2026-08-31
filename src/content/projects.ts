@@ -5,14 +5,14 @@ export const projects: Project[] = [
     slug: "precious-metals-trading-platform",
     name: "Precious Metals Trading Platform",
     company: "Bacancy Technology",
-    period: "Mar 2025 – Present",
-    stack: ["Node.js", "PostgreSQL", "Redis", "Kafka", "WebSockets", "AWS"],
+    period: "Mar 2025 - Present",
+    stack: ["Python", "FastAPI", "PostgreSQL", "Redis", "Kafka", "WebSockets", "AWS"],
     summary:
-      "A UK-based precious metals trading platform order management, live pricing, and multi-gateway payments running as one production system.",
+      "A UK-based precious metals trading platform, order management, live pricing, semantic product search, and multi-gateway payments running as one production system.",
     bullets: [
-      "Built a schema-flexible admin system letting the client define custom fields, column types, and dropdown configurations without code changes cut engineering requests by ~60%.",
-      "Designed configurable payment orchestration the client switches between gateways with zero engineering intervention and zero downtime.",
-      "Redesigned pricing distribution from polling to WebSocket push, removing redundant traffic while keeping every session in sync.",
+      "Built a schema-flexible admin system letting the client define custom fields, column types, and dropdown configurations without code changes, cutting engineering requests for routine configuration by ~60%.",
+      "Implemented a live metals-pricing service backed by Redis caching and WebSocket distribution, supporting real-time, poll-free price updates across concurrent sessions.",
+      "Built the product-search mechanism using Pinecone vector search over product embeddings, matching on meaning rather than exact keywords for more relevant, typo-tolerant results.",
     ],
     diagrams: ["payment-orchestration", "pricing-broadcast"],
   },
@@ -20,7 +20,7 @@ export const projects: Project[] = [
     slug: "airyis-ai-marketing-automation",
     name: "Airyis AI Marketing Automation Platform",
     company: "Citrusbug Technolabs",
-    period: "Feb 2024 – Mar 2025",
+    period: "Feb 2024 - Mar 2025",
     stack: ["Python", "FastAPI", "Kafka", "AWS SES", "Facebook", "WhatsApp", "Twitter APIs"],
     summary:
       "A unified dispatch layer that fans a single campaign event out across email, Facebook, WhatsApp, and Twitter.",
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     slug: "multisports-booking-system",
     name: "Multisports Booking System",
     company: "Citrusbug Technolabs",
-    period: "Dec 2022 – Oct 2023",
+    period: "Dec 2022 - Oct 2023",
     stack: ["Python", "FastAPI", "Kafka", "AWS SES", "SQS", "Stripe"],
     summary:
       "Backend for a multi-sport booking platform court bookings, memberships, event registration, and daily scheduling for padel, tennis, and more.",

@@ -13,7 +13,7 @@ export const awards: Award[] = [
     org: "Bacancy Technology",
     period: "Q2 2025",
     description:
-      "Diagnosed and resolved critical performance issues on the GoldBank platform, keeping it production-ready while a new system was built in parallel.",
+      "Diagnosed and resolved critical performance issues on the precious metals trading platform, enabling it to handle production load while the new system was built in parallel.",
   },
   {
     title: "Employee of the Quarter",

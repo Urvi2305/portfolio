@@ -23,11 +23,11 @@ const siteUrl = "https://urvi-solanki.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Urvi Solanki Senior Backend Engineer (AI)",
+  title: "Urvi Solanki, Senior Backend Engineer",
   description:
     "Senior Backend Engineer building payment orchestration, event-driven pipelines, and real-time infrastructure with Python, Node.js, Kafka, and Postgres.",
   openGraph: {
-    title: "Urvi Solanki Senior Backend Engineer (AI)",
+    title: "Urvi Solanki, Senior Backend Engineer",
     description:
       "Payment orchestration, event-driven pipelines, and real-time infrastructure 5+ years building backend systems that move money and data reliably.",
     url: siteUrl,
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Urvi Solanki Senior Backend Engineer (AI)",
+    title: "Urvi Solanki, Senior Backend Engineer",
     description:
       "Payment orchestration, event-driven pipelines, and real-time infrastructure 5+ years building backend systems that move money and data reliably.",
   },

@@ -2,7 +2,7 @@ export const education = {
   degree: "B.E. Computer Engineering",
   school: "Gujarat Technological University",
   gpa: "CGPA 8.4",
-  period: "2018 – 2022",
+  period: "2018 - 2022",
 };
 
 export const languages = [
